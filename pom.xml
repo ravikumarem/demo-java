@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>Demo Maven Webapp</name>
   <url>https://github.com/tongueroo/demo-java</url>
+  
+  <properties>
+<sonar.host.url>http://3.109.54.109:9000/</sonar.host.url>
+                <sonar.login>7087500a94f0024dc1365ed5a7d074ef80740b4e</sonar.login>
+  </properties>
   <build>
     <finalName>demo</finalName>
     <sourceDirectory>src</sourceDirectory>
@@ -43,4 +48,17 @@
         <version>3.1.0</version>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+            <repository>
+              <id>nexus</id>
+              <url>http://13.235.86.126:8081/repository/another-webapp-release/</url>
+            </repository>
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>Manoj Indalkar Snapshot Nexus Repository </name>
+              <url>http://13.235.86.126:8081/repository/another-webapp-snapshot/</url>
+            </snapshotRepository>
+  </distributionManagement>
+  
 </project>
