@@ -1,6 +1,9 @@
 pipeline
 {
-	agent any
+	agent 
+	{
+		label 'dinda'
+	}
 	stages
 	{
 		stage('CheckOut')
