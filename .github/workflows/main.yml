@@ -1,0 +1,14 @@
+name: Build and Deploy Application
+
+on:
+  push:
+    branches:
+      - master
+      - ufo
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
