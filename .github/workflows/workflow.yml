@@ -3,8 +3,8 @@ name: Build and Deploy Application
 on:
   push:
     branches:
-      - dev-docker
-      - production
+      - master
+      - ufo
 
 jobs:
   build-and-deploy:
