@@ -13,6 +13,6 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Setup Node.js
+    - name: sample message
       run: | 
         echo "Hello World from prod env"
